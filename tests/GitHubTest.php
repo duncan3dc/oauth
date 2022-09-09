@@ -2,7 +2,9 @@
 
 namespace duncan3dc\OAuth;
 
-class GitHubTest extends \PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class GitHubTest extends TestCase
 {
     protected function callProtectedMethod($methodName, $param)
     {
