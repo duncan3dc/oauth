@@ -1,11 +1,11 @@
-php-oauth
-=========
+oauth
+=====
 
 Handles non-web based OAuth/OAuth2 authentication along with providers for common services
 
 [![Latest Stable Version](https://poser.pugx.org/duncan3dc/oauth/version.svg)](https://packagist.org/packages/duncan3dc/oauth)
-[![Build Status](https://travis-ci.org/duncan3dc/php-oauth.svg?branch=master)](https://travis-ci.org/duncan3dc/php-oauth)
-[![Coverage Status](https://coveralls.io/repos/github/duncan3dc/php-oauth/badge.svg?branch=master)](https://coveralls.io/github/duncan3dc/php-oauth)
+[![build](https://github.com/duncan3dc/oauth/workflows/.github/workflows/buildcheck.yml/badge.svg?branch=main)](https://github.com/duncan3dc/oauth/actions/workflows/buildcheck.yml)
+[![Coverage Status](https://coveralls.io/repos/github/duncan3dc/oauth/badge.svg?branch=master)](https://coveralls.io/github/duncan3dc/oauth)
 
 __I really don't think you will find these classes useful, if you proceed then don't say I didn't warn you__  
 You are likely looking for [thephpleague/oauth1-client](https://github.com/thephpleague/oauth1-client) or [thephpleague/oauth2-client](https://github.com/thephpleague/oauth2-client)
