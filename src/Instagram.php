@@ -2,7 +2,6 @@
 
 namespace duncan3dc\OAuth;
 
-use duncan3dc\Helpers\Helper;
 use duncan3dc\Serial\Json;
 
 class Instagram extends OAuth2

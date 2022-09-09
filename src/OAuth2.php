@@ -2,8 +2,6 @@
 
 namespace duncan3dc\OAuth;
 
-use duncan3dc\Helpers\Cache;
-use duncan3dc\Helpers\Helper;
 use duncan3dc\Serial\Json;
 
 class OAuth2
@@ -17,6 +15,8 @@ class OAuth2
     public  $authoriseUrl;
     public  $redirectUrl;
     public  $accessUrl;
+
+    private $data;
 
 
     public function __construct(array $options)
@@ -100,17 +100,14 @@ class OAuth2
     {
         $sql = Sql::getInstance();
 
-        if (Cache::check("data")) {
-            $data = Cache::get("data");
-        } else {
-            $data = $sql->select("oauth", [
+        if ($this->data === null) {
+            $this->data = $sql->select("oauth", [
                 "type"      =>  $this->type,
                 "username"  =>  $this->username,
             ]);
-            Cache::set("data", $data);
         }
 
-        return $data[$key];
+        return $this->data[$key];
     }
 
 
@@ -127,7 +124,7 @@ class OAuth2
             "username"  =>  $this->username,
         ]);
 
-        Cache::clear("data");
+	$this->data = null;
 
         return true;
     }
