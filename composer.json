@@ -16,7 +16,7 @@
         "duncan3dc/serial": ">=0.3.0",
         "duncan3dc/sql-class": ">=1.5.3",
         "ext-oauth": "*",
-        "php": "^5.6|^7.0"
+        "php": "^7.2"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7.1"
